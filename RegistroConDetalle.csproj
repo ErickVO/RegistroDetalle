@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200224231556_Inicial.cs" />
+    <Compile Remove="Migrations\20200224231556_Inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200302225442_inicial.cs" />
+    <Compile Remove="Migrations\20200302225442_inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200306201649_inicial.cs" />
+    <Compile Remove="Migrations\20200306201649_inicial.Designer.cs" />
+    <Compile Remove="Migrations\20200306220146_inicial.cs" />
+    <Compile Remove="Migrations\20200306220146_inicial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="UI\380020.png" />
+    <None Remove="UI\72668468-plus-icon-vector-illustration.jpg" />
+    <None Remove="UI\Capture.PNG" />
+    <None Remove="UI\pngtree-magnifying-glass-icon-png-image_1644200.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqLite" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UI\380020.png" />
+    <Resource Include="UI\72668468-plus-icon-vector-illustration.jpg" />
+    <Resource Include="UI\Capture.PNG" />
+    <Resource Include="UI\pngtree-magnifying-glass-icon-png-image_1644200.jpg" />
+  </ItemGroup>
+
+</Project>
